@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="مفت آن لائن تصویر کمپریسر اور پینافلیکس ڈیزائنر ٹول۔ تصاویر کو بغیر کوالٹی گھٹائے چھوٹا کریں۔">
+    <meta name="keywords" content="تصویر کمپریسر, پینافلیکس ڈیزائنر, اردو ٹول, فری امیج آپٹیمائزر, SEO ٹول">
+    <meta name="author" content="آپ کا نام">
+    <meta name="robots" content="index, follow">
+    <title>پینافلیکس ڈیزائنر اور امیج کمپریسر | مفت اردو ٹول</title>
+    <!-- Google AdSense (Replace PUBLISHER_ID with your own) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            direction: rtl;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #4a6bff, #6a11cb);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        .ad-banner {
+            background: #f0f0f0;
+            padding: 15px;
+            text-align: center;
+            margin: 20px 0;
+            border-radius: 8px;
+            border: 1px dashed #ccc;
+        }
+        .tool-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .upload-box {
+            border: 2px dashed #4a6bff;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 20px 0;
+            cursor: pointer;
+        }
+        .upload-box:hover {
+            background: #f0f7ff;
+        }
+        #file-input {
+            display: none;
+        }
+        .controls {
+            margin: 20px 0;
+        }
+        .slider-container {
+            margin: 15px 0;
+        }
+        .slider-container label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .slider {
+            width: 100%;
+            height: 10px;
+            -webkit-appearance: none;
+            background: #ddd;
+            outline: none;
+            border-radius: 5px;
+        }
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #4a6bff;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        button {
+            background: #4a6bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #3a5bef;
+        }
+        .result {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .result img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .download-btn {
+            margin-top: 15px;
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .download-btn:hover {
+            background: #218838;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            .upload-box {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>پینافلیکس ڈیزائنر اور امیج کمپریسر</h1>
+            <p>اپنی تصاویر کو بغیر کوالٹی گھٹائے چھوٹا کریں</p>
+        </header>
+
+        <!-- AdSense Banner (Replace AD_UNIT_ID with your own) -->
+        <div class="ad-banner">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID" crossorigin="anonymous"></script>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                 data-ad-slot="AD_UNIT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <div class="tool-container">
+            <div class="upload-box" id="drop-area">
+                <h3>تصویر اپ لوڈ کریں</h3>
+                <p>فائل کو یہاں ڈریگ اینڈ ڈراپ کریں یا کلک کریں</p>
+                <input type="file" id="file-input" accept="image/*">
+            </div>
+
+            <div class="controls">
+                <div class="slider-container">
+                    <label for="quality">کمپریشن لیول: <span id="quality-value">70</span>%</label>
+                    <input type="range" id="quality" class="slider" min="10" max="100" value="70">
+                </div>
+                <button id="compress-btn">کمپریس کریں</button>
+            </div>
+
+            <div class="result" id="result">
+                <!-- Result will be shown here -->
+            </div>
+        </div>
+
+        <!-- Second Ad Banner -->
+        <div class="ad-banner">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID" crossorigin="anonymous"></script>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                 data-ad-slot="AD_UNIT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <footer>
+            <p>© 2023 پینافلیکس ڈیزائنر ٹول | تمام حقوق محفوظ ہیں</p>
+        </footer>
+    </div>
+
+    <script>
+        // Image Compression Functionality
+        const fileInput = document.getElementById('file-input');
+        const dropArea = document.getElementById('drop-area');
+        const qualitySlider = document.getElementById('quality');
+        const qualityValue = document.getElementById('quality-value');
+        const compressBtn = document.getElementById('compress-btn');
+        const resultDiv = document.getElementById('result');
+
+        // Update quality value display
+        qualitySlider.addEventListener('input', () => {
+            qualityValue.textContent = qualitySlider.value;
+        });
+
+        // Handle file selection
+        dropArea.addEventListener('click', () => fileInput.click());
+        
+        fileInput.addEventListener('change', (e) => {
+            if (e.target.files.length) {
+                handleImageUpload(e.target.files[0]);
+            }
+        });
+
+        // Handle drag and drop
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            dropArea.addEventListener(eventName, preventDefaults, false);
+        });
+
+        function preventDefaults(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+
+        ['dragenter', 'dragover'].forEach(eventName => {
+            dropArea.addEventListener(eventName, highlight, false);
+        });
+
+        ['dragleave', 'drop'].forEach(eventName => {
+            dropArea.addEventListener(eventName, unhighlight, false);
+        });
+
+        function highlight() {
+            dropArea.style.backgroundColor = '#f0f7ff';
+        }
+
+        function unhighlight() {
+            dropArea.style.backgroundColor = '';
+        }
+
+        dropArea.addEventListener('drop', (e) => {
+            const dt = e.dataTransfer;
+            const file = dt.files[0];
+            if (file && file.type.startsWith('image/')) {
+                handleImageUpload(file);
+            }
+        });
+
+        // Process image
+        function handleImageUpload(file) {
+            const reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = () => {
+                resultDiv.innerHTML = `
+                    <h3>اصل تصویر</h3>
+                    <img src="${reader.result}" alt="Original Image">
+                    <p>سائز: ${(file.size / 1024).toFixed(2)} KB</p>
+                `;
+            };
+        }
+
+        // Compress image
+        compressBtn.addEventListener('click', () => {
+            if (!fileInput.files.length) {
+                alert('براہ کرم پہلے تصویر اپ لوڈ کریں!');
+                return;
+            }
+
+            const file = fileInput.files[0];
+            const quality = qualitySlider.value / 100;
+
+            const reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = (event) => {
+                const img = new Image();
+                img.src = event.target.result;
+                img.onload = () => {
+                    const canvas = document.createElement('canvas');
+                    const ctx = canvas.getContext('2d');
+                    canvas.width = img.width;
+                    canvas.height = img.height;
+                    ctx.drawImage(img, 0, 0);
+
+                    canvas.toBlob((blob) => {
+                        const compressedUrl = URL.createObjectURL(blob);
+                        resultDiv.innerHTML = `
+                            <h3>کمپریس شدہ تصویر</h3>
+                            <img src="${compressedUrl}" alt="Compressed Image">
+                            <p>نیا سائز: ${(blob.size / 1024).toFixed(2)} KB</p>
+                            <a href="${compressedUrl}" download="compressed_${file.name}" class="download-btn">ڈاؤن لوڈ کریں</a>
+                        `;
+                    }, 'image/jpeg', quality);
+                };
+            };
+        });
+    </script>
+</body>
+      </html>
